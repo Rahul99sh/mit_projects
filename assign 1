@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+</style>
+</head>
+<body>
+
+<h1 style =" background-color:rgb(46, 138, 243);"> Student Information</h1>
+<table style="width: 60%">
+  <tr>
+    <th style="width:1%"></th>
+    <th>Name </th>
+    <th>Roll NO.</th> 
+    <th>PRN </th>
+  </tr>
+  <tr>
+    <td> 1. </td>
+    <td>Pranay Jain</td>
+    <td>PB07</td>
+    <td>1032200988</td>
+  </tr>
+  <tr>
+    <td> 2. </td>
+    <td>Rahul Sharma </td>
+    <td>PB05</td>
+    <td>1032200868</td>
+  </tr>
+  <tr>
+    <td> 3. </td>
+    <td>Astha Borah</td>
+    <td>PB08</td>
+    <td>1032201017</td>
+  </tr>
+</table>
+<br>
+<br>
+<div>
+    <form action="/action_page.php">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPIWNxqYlgwcPj7JZDM_5pS7nf-Gy9ySNmD4WOLHd_YGhEILVR-DqzJ6FIEdbMw-dxoY&usqp=CAU" alt=""> <br><br>
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Age :</label>
+        <input type="text" id="Age" name="Age"><br>
+        <label for="lname">Email :</label>
+        <input type="text" id="email" name="email"><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HSC</label><br>
+        <input type="radio" id="SSC" name="fav_language" value="CSS">
+        <label for="css">SSC</label><br>
+        <input type="radio" id=" 1st Year" name="fav_language" value="JavaScript">
+        <label for="javascript">1st Year</label><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset"  value="Reset" >
+      </form>
+</div>
+
+
+
+</body>
+</html>
+
