@@ -1,107 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Assignment 1</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-</head>
-<body>
+    <head>
+        <title>Student Information</title>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
+        <style>
+            th, td {
+                        padding: 15px;
+                        border-bottom: 1px solid #ddd;
+                        text-align: left;
+                    }
+            th {
+                background-color: #04AA6D;
+                color: white;
+            }
+            tr:nth-child(even) {background-color: #f2f2f2;}
+            .footer1{
+                background-color: #04AA6D;
+                text-align: center;
+                padding: 2px;
+                color: white;
+            }
+            img{
+                width: 15%;
+                height: 15%;
+                
+            }
+            table{
+                border-collapse: collapse;
+            }
+            * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+        </style>
+    </head>
+
+    <body>
+
+
+    <h1  class="w3-wide"><span><center>Student Information</center></span></h1>
+    <span class="w3-opacity"><i><center>Hosted basic webpage on Github Pages</center></i></span><br><br><br><br>
+    <div id ="img1">
+        <img align="right" align="top" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="Italian Trulli">
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
+    <div >
+    <table >
+        <tr>
+          <th>Name</th>
+          <th>Roll No.</th>
+          <th>Marks</th>
+        </tr>
+        <tr>
+            
+          <td>Rahul</td>
+          <td>21</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>Pranay</td>
+          <td>22</td>
+          <td>90</td>
+        </tr>
+      </table> 
+    </div><br><br><br><br>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+    <div>
+        <form action="">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="checkbox" id="s1" name="s1" value="subject">
+            <label for="s1"> SSC</label>
+            <input type="checkbox" id="s2" name="s2" value="subject">
+            <label for="s2"> HSC</label>
+            <input type="checkbox" id="s3" name="s3" value="subject">
+            <label for="s3">Engg</label><br>
+            <input type="radio" id="agree" name="terms" value="termsncond">
+            <label for="agree">Agree To terms and conditions</label><br><br>
+            <input type="submit" value="Reset">
+            <input type="submit" value="Submit">
+          </form> <br><br>
+    </div>
 
-  <!-- body -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">Assignment 1</h2>
-    <p class="w3-opacity"><i>Hosted basic webpage on Github Pages</i></p>
-  
-   
-  </div>
 
- 
-
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
- 
-</footer>
+
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 </script>
 
 </body>
+<footer class="footer1">
+  
+    <p> Hey!! This if footer </p>
+</footer>
 </html>
